@@ -5,6 +5,8 @@
 1.    release中下载 server.ZIP，将内容解压后的所有文件放在**与webui.bat同一个目录中**，双击start.bat启动
 
 2. 用python直接运行
+
+   注意aria2c需要自行前往aria2c存贮库下载 
    
    需要有python环境，**暂时不能调用ai-paint中的python环境，需要另外安装并添加到PATH**
    
@@ -76,7 +78,7 @@
 
 - **/download_status** GET 获取下载状态
 
-- **/download_stop/<gid>** GET 使用gid强制停止某个任务，*（gid在上面两个的返回内容中提供）*
+- **/download_stop/gid** GET 使用gid强制停止某个任务，*（gid在上面两个的返回内容中提供）*
 
 
 
