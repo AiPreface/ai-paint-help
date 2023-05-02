@@ -214,4 +214,4 @@ if __name__ == "__main__":
             secret=config["secret"]
         )
     )
-    app.run(port=config["listen_port"], host=config["listen_address"], threaded=True, debug=True)
+    app.run(port=config["listen_port"], host=config["listen_address"], threaded=True)
