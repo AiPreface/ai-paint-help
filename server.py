@@ -79,7 +79,7 @@ def download():
     elif type == "emb":
         save_path = os.path.join(py_path, "embeddings")
     elif type == "lora":
-        save_path = os.path.join(py_path, "models", "models/Lora")
+        save_path = os.path.join(py_path, "models","Lora")
         pass
     else:
         return json.dumps({"status": "unkown_type", "msg": f"未知的类型:{type}"}), 500
