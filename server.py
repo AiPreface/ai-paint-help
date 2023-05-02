@@ -101,7 +101,7 @@ def download():
                     return json.dumps(
                         {"status": "downloading", "file_path": file_path, "gid": i.gid, "status_download": i.status,
                          "msg": "所选链接正在下载中"}), 200
-                elif i.status == "complete":
+                elif b["uri"] == file_path and i.status == "complete":
                     return json.dumps(
                         {"status": "download_complete", "file_path": file_path, "gid": i.gid, "status_download": i.status,
                          "msg": "所选链接下载完成"}), 200
